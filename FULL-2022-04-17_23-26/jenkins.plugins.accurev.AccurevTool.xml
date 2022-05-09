@@ -1,0 +1,10 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<jenkins.plugins.accurev.AccurevTool_-DescriptorImpl plugin="accurev@0.7.24">
+  <installations class="jenkins.plugins.accurev.AccurevTool-array">
+    <jenkins.plugins.accurev.AccurevTool>
+      <name>Default</name>
+      <home>accurev</home>
+      <properties/>
+    </jenkins.plugins.accurev.AccurevTool>
+  </installations>
+</jenkins.plugins.accurev.AccurevTool_-DescriptorImpl>

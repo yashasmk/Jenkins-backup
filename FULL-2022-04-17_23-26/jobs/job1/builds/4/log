@@ -1,0 +1,49 @@
+Started by user [8mha:////4P9duK1hrDiS626mDUBhNB7JuFpixmdNCjguaV5SqAj5AAAAlR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZO/dLi1CL9ytxsAFWz8MG+AAAA[0mymk
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/job1
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/job1/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/yashasmk/git.git # timeout=10
+Fetching upstream changes from https://github.com/yashasmk/git.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git fetch --tags --force --progress -- https://github.com/yashasmk/git.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision c2ba54f87683535541bf4f712fc49cd90932be58 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f c2ba54f87683535541bf4f712fc49cd90932be58 # timeout=10
+Commit message: "modefied makefile again"
+ > git rev-list --no-walk c2ba54f87683535541bf4f712fc49cd90932be58 # timeout=10
+[job1] $ /bin/sh -xe /tmp/jenkins17876795664029404110.sh
++ cd /var/lib/jenkins/workspace/job1
++ make
+gcc -c main.c
+main.c:2:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+ main() {
+ ^~~~
+main.c: In function ‘main’:
+main.c:4:10: warning: implicit declaration of function ‘biggest’ [-Wimplicit-function-declaration]
+          biggest();
+          ^~~~~~~
+main.c:5:10: warning: implicit declaration of function ‘factorial’ [-Wimplicit-function-declaration]
+          factorial();
+          ^~~~~~~~~
+main.c:6:9: warning: implicit declaration of function ‘reverse’ [-Wimplicit-function-declaration]
+         reverse();
+         ^~~~~~~
+gcc -c big2.c
+big2.c:2:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+ biggest()
+ ^~~~~~~
+gcc -c fact.c
+fact.c:2:2: warning: return type defaults to ‘int’ [-Wimplicit-int]
+  factorial() {
+  ^~~~~~~~~
+gcc -c rev.c
+rev.c:2:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+ reverse()
+ ^~~~~~~
+gcc -o ABC.exe main.o big2.o fact.o rev.o
+Finished: SUCCESS
